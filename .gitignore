@@ -1,0 +1,5 @@
+game
+*.o
+html/
+latex/
+.DS_Store
