@@ -190,11 +190,11 @@ sequenceDiagram
     participant P as Player
     participant M as Master
 
-    P->>M: MOVE seq=N, payload="rock/paper/scissors"
+    P->>M: MOVE seq=N
     M-->>P: ACK ack=N
     M->>M: Ввод хода master
     M->>M: Расчёт результата раунда
-    M->>P: RESULT seq=K, payload="round=...;winner=...;score=..."
+    M->>P: RESULT seq=K
     P-->>M: ACK ack=K
 ```
 
